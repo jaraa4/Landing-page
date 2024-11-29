@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .wrapper-login h2{
+        font-size: 2.5rem;
+        color: lightgreen;
+        text-align: center;
+    }
+    .wrapper-login .input-box{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 40px 0;
+    }
+    .input-box .input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 1px solid white;
+        outline: none;
+        border-radius: 40px;
+        font-size: 1.5rem;
+        color: rgb(92, 221, 92);
+        padding: 10px;
+        gap: 5px;
+        text-align: center;
+    }
+    .input-box label{
+        position: absolute;
+        color: rgb(9, 9, 9);
+        top: 45px;
+        left: 30px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+    .input-box input:focus~label
+    .input-box input:focus~label{
+        font-size: 1.5rem;
+        top: -14px;
+        left: 17px;
+    }
+    .input-box .icon{
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        font-size: 2rem;
+        color: rgb(9, 9, 9);
+    }
+    .wrapper-login .remember-forgot{
+        font-size: 1rem;
+        color: rgb(8, 8, 8);
+        font-weight: 500;
+        margin: -25px 0 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .remember-forgot label input{
+        margin-right: 3px;
+        font-size: 1.5rem;
+    }
+    .remember-forgot a{
+        color: rgb(8, 8, 8);
+        text-decoration: none;
+    }
+    .remember-forgot a:hover{
+        text-decoration: underline;
+    }
+    .wrapper-login .btn{
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        background: rgb(78, 195, 49);
+        box-shadow: 0 8px 10px goldenrod;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .wrapper-login .register-link{
+        font-size: 1rem;
+        color: rgb(3, 3, 3);
+        text-align: center;
+        margin: 30px 0;
+    }
+    .register-link p a{
+        color: rgb(9, 9, 9);
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .register-link p a:hover{
+        text-decoration: underline;
+    }
+</style>
+     
+</head>
+<body>
+    <div class="wrapper-login">
+        <h2>login here</h2>
+        <form action="file:///C:/Users/ASUS/Desktop/projek%20uts/percobaan/satu.html" method="post">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label>enter your email</label>
+          </div>
+          <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label>enter your password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">remember me</label>
+            <a href="#">forgot password?</a>
+          </div>
+          <button type="submit" class="btn">login</button>
+          <div class="register-link">
+            <P>Don't have an account?<a href="#">sign up now</a></P>
+             </div>
+        </form>
+      </div>
+</body>
+</html>
